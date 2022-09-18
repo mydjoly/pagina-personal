@@ -1,0 +1,519 @@
+*,
+*::after,
+*::before {
+  font-family: "Raleway", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(169, 184, 231);
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 400;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 35px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.texto-web{
+  background: rgb(255,255,255);
+  background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(183,208,255,1) 100%);
+  padding: 30px;
+  flex-direction: column;
+  text-align: center;
+}
+
+
+.quien-soy{
+  padding: 30px;
+  text-align: center;
+  background: rgb(255,255,255);
+  background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(183,208,255,1) 100%);
+  position: relative;
+  right: 130px;
+  clip-path: circle(0%);
+  opacity: 0;
+  transition: .3s ease all;
+}
+
+.escribo-música{
+  background: rgb(255,255,255);
+  background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(183,208,255,1) 100%);
+  
+  padding: 30px;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+  right: 130px;
+  clip-path: circle(0%);
+  opacity: 0;
+  transition: .3s ease all;
+}
+.algunas-canciones{
+  background: rgb(255,255,255);
+  background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(183,208,255,1) 100%);
+  
+  padding: 30px;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+  clip-path: circle(0% at 50% 0);
+  bottom: 40px;
+  opacity: 0;
+  transition: .3s ease all;
+}
+
+.seccion{
+  background: rgb(255,255,255);
+  background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(183,208,255,1) 100%);
+  padding: 30px;
+  flex-direction: column;
+  text-align: center;
+}
+
+.seccion2{
+  background: rgb(255,255,255);
+  background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(183,208,255,1) 100%);
+  padding: 30px;
+  flex-direction: column;
+  text-align: center;
+}
+
+.seccion3{
+  background-color: rgba(183,208,255);
+  padding: 30px;
+  flex-direction: column;
+  text-align: center;
+}
+.contenedor {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.myd-joly {
+  background-color: blanchedalmond;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.myd-joly h2 {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.myd-joly:hover {
+  color: grey;
+  cursor: pointer;
+
+}
+
+.logo-canal img {
+  width: 80px;
+  height: 80px;
+}
+
+.iframe-contenedor {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  margin-bottom: 20px;
+}
+
+.iframe-contenedor iframe {
+  border: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.grid-body {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+}
+
+.EP{
+  grid-column-start: 1;
+  grid-column-end: 7;
+}
+
+.a-solas{
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.mar-azul{
+  grid-column-start: 3;
+  grid-column-end: 5;
+}
+
+.que-pienso-de-ti{
+  grid-column-start: 5;
+  grid-column-end: 7;
+}
+
+.otra-vez-cayendo{
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.que-se-vaya{
+  grid-column-start: 4;
+  grid-column-end: 7;
+}
+
+.secciones:nth-child(1) {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.secciones:nth-child(2) {
+  grid-column-start: 3;
+  grid-column-end: 5;
+}
+
+.secciones:nth-child(3) {
+  grid-column-start: 5;
+  grid-column-end: 7;
+}
+
+.secciones:nth-child(4) {
+  grid-column-start: 1;
+  grid-column-end: 7;
+}
+
+@media (max-width: 768px){
+  
+  .secciones:nth-child(1) {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+  
+  .secciones:nth-child(2) {
+    grid-column-start: 4;
+    grid-column-end: 7;
+  }
+  
+  .secciones:nth-child(3) {
+    grid-column-start: 1;
+    grid-column-end: 7;
+  }
+  
+  .secciones:nth-child(4) {
+    grid-column-start: 1;
+    grid-column-end: 7;
+  }
+}
+
+
+
+.btn-mimusica h2{
+  display: inline-block;
+  background-color: rgb(230, 235, 191);
+  width: 180px;
+  margin: auto;
+  padding: 10px;
+  border-radius: 6px;
+  transition: .3s ease-in-out all;
+}
+
+.btn-mimusica:hover h2 {
+  background-color:rgb(235, 236, 145);
+}
+
+
+label{
+  background-color: rgb(34, 34, 34);
+  border: none;
+  padding: 8px;
+  transition: .3s ease all;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+label span{
+  color: white;
+  position: relative;
+  top: 6px;
+  left: 1px;
+}
+
+label:hover {
+  background-color: rgb(106, 141, 255);
+}
+
+#btn-siguiente{
+  margin: 0;
+  display: none;
+}
+
+#btn-siguiente:checked ~ .quien-soy{
+  clip-path: circle(100%);
+  opacity: 1;
+  right: 0;
+} 
+
+
+#btn-siguiente2{
+  margin: 0;
+  display: none;
+}
+#btn-siguiente2:checked ~ .escribo-música{
+  clip-path: circle(100%);
+  opacity: 1;
+  right: 0;
+} 
+
+#btn-siguiente3{
+  margin: 0;
+  display: none;
+}
+
+#btn-siguiente3:checked ~ .algunas-canciones{
+  clip-path: circle(100%);
+  opacity: 1;
+  bottom: 0;
+}
+
+.seccion2 a, .seccion3 a{
+  padding: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: beige;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.btn-atras{
+  background-color: transparent;
+  padding: 0;
+  margin-top: 30px;
+  margin-left: auto;
+  display: block;
+  
+
+}
+
+.seccion2 a:hover{
+  background-color: rgb(207, 207, 187);
+}
+
+.seccion3 a:hover{
+  background-color: rgb(207, 207, 187);
+}
+
+.cancion{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: (3, 1fr);
+  gap: 15px;
+}
+
+.cancion #a-solas-letra{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+
+.cancion #mar-azul-letra{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+
+.cancion #que-pienso-de-ti-letra{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+
+.cancion #otra-vez-cayendo-letra{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+
+.cancion #que-se-vaya-letra{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+
+.cancion audio{
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.cancion h1{
+  margin-left: 10px;
+}
+
+#a-solas-letra{
+  font-size: large;
+  width: 500px;
+}
+
+#mar-azul-letra{
+  font-size: large;
+  width: 500px;
+}
+
+#que-pienso-de-ti-letra{
+  font-size: large;
+  width: 500px;
+}
+
+#otra-vez-cayendo-letra{
+  font-size: large;
+  width: 500px;
+}
+
+#que-se-vaya-letra{
+  font-size: large;
+  width: 500px;
+}
+
+.coro{
+  color: orange;
+  font-weight: bold;
+}
+
+.estrofa{
+  color: rgb(58, 118, 136);
+}
+
+.cancion audio{
+  margin-top: 29.050px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.explicacion{
+  text-align: center;
+}
+
+@media (max-width: 1100px) {
+  #mar-azul-letra{
+    font-size: large;
+    width: 350px;
+  }
+
+  #a-solas-letra{
+    font-size: large;
+    width: 300px;
+  }
+
+  #que-pienso-de-ti-letra{
+    font-size: large;
+    width: 300px;
+  }
+
+  #otra-vez-cayendo-letra{
+    font-size: large;
+    width: 300px;
+  }
+
+  #que-se-vaya-letra{
+    font-size: large;
+    width: 300px;
+  }
+}
+
+@media (max-width: 900px){
+  #a-solas-letra{
+    text-align: center;
+    font-size: large;
+    width: 300px;
+  }
+
+ #mar-azul-letra{
+    text-align: center;
+    font-size: large;
+    width: 300px;
+  }
+
+  #que-pienso-de-ti-letra{
+    text-align: center;
+    font-size: large;
+    width: 300px;
+  }
+
+  #otra-vez-cayendo-letra{
+    text-align: center;
+    font-size: large;
+    width: 300px;
+  }
+
+  #que-se-vaya-letra{
+    text-align: center;
+    font-size: large;
+    width: 300px;
+  }
+
+  .cancion #a-solas-letra{
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .cancion #mar-azul-letra{
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .cancion #que-pienso-de-ti-letra{
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .cancion #otra-vez-cayendo-letra{
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .cancion #que-se-vaya-letra{
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .cancion audio{
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .explicacion{
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
+
+.imagen-de-cancion img{
+  width: 300px;
+}
