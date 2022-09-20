@@ -511,27 +511,27 @@ label:hover {
 
 #a-solas-letra{
   font-size: large;
-  width: 500px;
+  width: 100%;
 }
 
 #mar-azul-letra{
   font-size: large;
-  width: 500px;
+  width: 100%;
 }
 
 #que-pienso-de-ti-letra{
   font-size: large;
-  width: 500px;
+  width: 100%;
 }
 
 #otra-vez-cayendo-letra{
   font-size: large;
-  width: 500px;
+  width: 100%;
 }
 
 #que-se-vaya-letra{
   font-size: large;
-  width: 500px;
+  width: 100%;
 }
 
 .coro{
@@ -556,27 +556,22 @@ label:hover {
 @media (max-width: 1100px) {
   #mar-azul-letra{
     font-size: large;
-    width: 350px;
   }
 
   #a-solas-letra{
     font-size: large;
-    width: 300px;
   }
 
   #que-pienso-de-ti-letra{
     font-size: large;
-    width: 300px;
   }
 
   #otra-vez-cayendo-letra{
     font-size: large;
-    width: 300px;
   }
 
   #que-se-vaya-letra{
     font-size: large;
-    width: 300px;
   }
 }
 
@@ -584,31 +579,26 @@ label:hover {
   #a-solas-letra{
     text-align: center;
     font-size: large;
-    width: 300px;
   }
 
  #mar-azul-letra{
     text-align: center;
     font-size: large;
-    width: 300px;
   }
 
   #que-pienso-de-ti-letra{
     text-align: center;
     font-size: large;
-    width: 300px;
   }
 
   #otra-vez-cayendo-letra{
     text-align: center;
     font-size: large;
-    width: 300px;
   }
 
   #que-se-vaya-letra{
     text-align: center;
     font-size: large;
-    width: 300px;
   }
 
   .cancion #a-solas-letra{
