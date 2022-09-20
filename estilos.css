@@ -18,7 +18,7 @@ h4 {
   font-weight: 400;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 450px) {
   
   h1{
     font-size: 18px;
@@ -125,7 +125,7 @@ a {
   text-align: center;
 }
 
-@media(max-width: 360px){
+@media(max-width: 450px){
   .texto-web{
     padding: 15px;
   }
@@ -148,7 +148,7 @@ a {
   margin: 0 auto;
 }
 
-@media (max-width: 360px){
+@media (max-width: 450px){
   .contenedor {
     max-width: 100%;
   }
@@ -183,7 +183,7 @@ a {
   
 }
 
-@media (max-width: 360px){
+@media (max-width: 450px){
   .logo-canal img{
     width: 50px;
   }
@@ -220,7 +220,7 @@ a {
   gap: 10px;
 }
 
-@media (max-width: 360px){
+@media (max-width: 450px){
   .grid-body{
     margin-top: 10px;
     margin-bottom: 10px;
@@ -260,7 +260,7 @@ a {
   grid-column-end: 7;
 }
 
-@media (max-width: 360px){
+@media (max-width: 450px){
   .EP{
     grid-column-start: 1;
     grid-column-end: 10;
@@ -369,7 +369,7 @@ label span{
   left: 1px;
 }
 
-@media (max-width: 360px){
+@media (max-width: 450px){
 
 .material-symbols-outlined{
   font-size: 18px;
@@ -449,7 +449,7 @@ label:hover {
   background-color: rgb(207, 207, 187);
 }
 
-@media (max-width: 360px){
+@media (max-width: 450px){
   .btn-atras{
     margin-top: 5px;
   }
@@ -651,7 +651,7 @@ label:hover {
   width: 300px;
 }
 
-@media (max-width: 360px){
+@media (max-width: 450px){
   .cancion{
     margin-top: 10px;
     margin-bottom: 0;
