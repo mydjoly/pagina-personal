@@ -1,3 +1,4 @@
+/* Seccion de fuentes */
 *,
 *::after,
 *::before {
@@ -17,9 +18,31 @@ h4 {
   font-weight: 400;
 }
 
+@media (max-width: 360px) {
+  
+  h1{
+    font-size: 18px;
+  }
+
+  h2{
+    font-size: 15px;
+  }
+
+  h3{
+    font-size: 15px;
+  }
+
+  p{
+    font-size: 12px;
+  }
+  
+  a{
+    font-size: 9px;
+  }
+}
 h1 {
   font-weight: bold;
-  font-size: 35px;
+
 }
 
 a {
@@ -28,9 +51,11 @@ a {
   font-weight: bold;
 }
 
+/* sección principal estilos de secciones */
+
 .texto-web{
   background: rgb(255,255,255);
-  background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(183,208,255,1) 100%);
+  background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(183,208,255,1) 20%);
   padding: 30px;
   flex-direction: column;
   text-align: center;
@@ -41,7 +66,7 @@ a {
   padding: 30px;
   text-align: center;
   background: rgb(255,255,255);
-  background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(183,208,255,1) 100%);
+  background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(183,208,255,1) 20%);
   position: relative;
   right: 130px;
   clip-path: circle(0%);
@@ -51,7 +76,7 @@ a {
 
 .escribo-música{
   background: rgb(255,255,255);
-  background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(183,208,255,1) 100%);
+  background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(183,208,255,1) 20%);
   
   padding: 30px;
   flex-direction: column;
@@ -64,7 +89,7 @@ a {
 }
 .algunas-canciones{
   background: rgb(255,255,255);
-  background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(183,208,255,1) 100%);
+  background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(183,208,255,1) 20%);
   
   padding: 30px;
   flex-direction: column;
@@ -78,58 +103,97 @@ a {
 
 .seccion{
   background: rgb(255,255,255);
-  background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(183,208,255,1) 100%);
+  background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(183,208,255,1) 40%);
   padding: 30px;
   flex-direction: column;
   text-align: center;
 }
 
+
 .seccion2{
   background: rgb(255,255,255);
-  background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(183,208,255,1) 100%);
+  background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(183,208,255,1) 40%);
   padding: 30px;
   flex-direction: column;
   text-align: center;
 }
 
 .seccion3{
-  background-color: rgba(183,208,255);
+  background: rgba(183,208,255);
   padding: 30px;
   flex-direction: column;
   text-align: center;
 }
+
+@media(max-width: 360px){
+  .texto-web{
+    padding: 15px;
+  }
+
+  .quien-soy{
+    padding: 15px;
+  }
+
+  .escribo-música{
+    padding: 15px;
+  }
+
+  .algunas-canciones{
+    padding: 15px;
+  }
+}
+
 .contenedor {
-  max-width: 80%;
+  max-width: 60%;
   margin: 0 auto;
 }
 
-.myd-joly {
+@media (max-width: 360px){
+  .contenedor {
+    max-width: 100%;
+  }
+}
+
+/* Cabecera */
+
+.myd-joly{
   background-color: blanchedalmond;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 6px;
-  padding-bottom: 10px;
-  padding-top: 10px;
+  padding: 10px;
+  transition: .3s ease-in-out all;
+  box-shadow: 4px 4px 15px rgb(72, 78, 99) ;
 }
 
 .myd-joly h2 {
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: lighter;
 }
 
-.myd-joly:hover {
-  color: grey;
+.myd-joly a:hover {
+  color: rgb(212, 214, 111);
   cursor: pointer;
-
 }
 
 .logo-canal img {
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  
 }
 
+@media (max-width: 360px){
+  .logo-canal img{
+    width: 50px;
+  }
+
+  .myd-joly{
+    box-shadow: 2px 2px 10px rgb(72, 78, 99) ;
+  }
+}
+
+/* Seccion del IFRAME */
 .iframe-contenedor {
   position: relative;
   padding-bottom: 56.25%;
@@ -146,12 +210,24 @@ a {
   height: 100%;
 }
 
+/* Seccion de GRIDS */
+
 .grid-body {
   margin-top: 30px;
   margin-bottom: 30px;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   gap: 10px;
+}
+
+@media (max-width: 360px){
+  .grid-body{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    grid-template-columns: repeat(9, 1fr);
+    gap: 5px;
+  }
+  
 }
 
 .EP{
@@ -184,6 +260,38 @@ a {
   grid-column-end: 7;
 }
 
+@media (max-width: 360px){
+  .EP{
+    grid-column-start: 1;
+    grid-column-end: 10;
+  }
+  
+  .a-solas{
+    grid-column-start: 1;
+    grid-column-end: 5;
+  }
+  
+  .mar-azul{
+    grid-column-start: 5;
+    grid-column-end: 10;
+  }
+  
+  .que-pienso-de-ti{
+    grid-column-start: 1;
+    grid-column-end: 10;
+  }
+  
+  .otra-vez-cayendo{
+    grid-column-start: 1;
+    grid-column-end: 6;
+  }
+  
+  .que-se-vaya{
+    grid-column-start: 6;
+    grid-column-end: 10;
+  }
+}
+
 .secciones:nth-child(1) {
   grid-column-start: 1;
   grid-column-end: 3;
@@ -208,30 +316,31 @@ a {
   
   .secciones:nth-child(1) {
     grid-column-start: 1;
-    grid-column-end: 4;
+    grid-column-end: 10;
   }
   
   .secciones:nth-child(2) {
-    grid-column-start: 4;
-    grid-column-end: 7;
+    grid-column-start: 1;
+    grid-column-end: 10;
   }
   
   .secciones:nth-child(3) {
     grid-column-start: 1;
-    grid-column-end: 7;
+    grid-column-end: 10;
   }
   
   .secciones:nth-child(4) {
     grid-column-start: 1;
-    grid-column-end: 7;
+    grid-column-end: 10;
   }
 }
 
-
+/* BOTONES */
 
 .btn-mimusica h2{
+  color: aliceblue;
   display: inline-block;
-  background-color: rgb(230, 235, 191);
+  background-color: rgb(34, 34, 34);
   width: 180px;
   margin: auto;
   padding: 10px;
@@ -240,7 +349,7 @@ a {
 }
 
 .btn-mimusica:hover h2 {
-  background-color:rgb(235, 236, 145);
+  background-color:rgb(147, 148, 87);
 }
 
 
@@ -260,6 +369,24 @@ label span{
   left: 1px;
 }
 
+@media (max-width: 360px){
+
+.material-symbols-outlined{
+  font-size: 18px;
+  }
+
+  label span{
+    top: 3px;
+    left: 2px;
+  }
+
+  label{
+    padding: 2px;
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+}
+
 label:hover {
   background-color: rgb(106, 141, 255);
 }
@@ -274,7 +401,6 @@ label:hover {
   opacity: 1;
   right: 0;
 } 
-
 
 #btn-siguiente2{
   margin: 0;
@@ -297,6 +423,15 @@ label:hover {
   bottom: 0;
 }
 
+.btn-atras{
+  background-color: transparent;
+  padding: 0;
+  margin-top: 30px;
+  margin-left: auto;
+  display: block;
+}
+
+
 .seccion2 a, .seccion3 a{
   padding: 5px;
   padding-left: 15px;
@@ -306,16 +441,6 @@ label:hover {
   cursor: pointer;
 }
 
-.btn-atras{
-  background-color: transparent;
-  padding: 0;
-  margin-top: 30px;
-  margin-left: auto;
-  display: block;
-  
-
-}
-
 .seccion2 a:hover{
   background-color: rgb(207, 207, 187);
 }
@@ -323,6 +448,14 @@ label:hover {
 .seccion3 a:hover{
   background-color: rgb(207, 207, 187);
 }
+
+@media (max-width: 360px){
+  .btn-atras{
+    margin-top: 5px;
+  }
+}
+
+/* Sección de las canciones */
 
 .cancion{
   margin-top: 30px;
@@ -516,4 +649,11 @@ label:hover {
 
 .imagen-de-cancion img{
   width: 300px;
+}
+
+@media (max-width: 360px){
+  .cancion{
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
 }
